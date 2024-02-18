@@ -1,34 +1,58 @@
-Enigma Laundry
-Aplikasi ini membantu dalam pengelolaan pelanggan, layanan, dan transaksi untuk bisnis laundry menggunakan Go dan PostgreSQL.
+# Enigma Laundry
 
-Enigma Laundry menawarkan:
-Manajemen pelanggan
-Manajemen layanan
-Manajemen transaksi
-Pencetakan invoice
+Enigma Laundry adalah aplikasi yang dirancang untuk membantu dalam pengelolaan pelanggan, layanan, dan transaksi untuk bisnis laundry. Aplikasi ini dibangun menggunakan Go dan PostgreSQL, menawarkan fitur-fitur seperti manajemen pelanggan, layanan, transaksi, dan pencetakan invoice.
 
-Instalasi
-Siapkan Go dan PostgreSQL. Ikuti langkah berikut:
-Clone repositori: git clone.
-Buka direktori: cd tugas_enigma.
-Buat dan isi database enigma_laundry dengan enigma_laundry.sql.
+## Fitur
 
-Atur database di main.go:
+- **Manajemen Pelanggan**: Kelola data pelanggan Anda dengan mudah.
+- **Manajemen Layanan**: Tawarkan berbagai layanan laundry dan atur mereka secara efisien.
+- **Manajemen Transaksi**: Pantau transaksi pelanggan dari waktu ke waktu.
+- **Pencetakan Invoice**: Cetak invoice transaksi untuk pelanggan.
 
-go
-Copy code
-const (
-    host     = "localhost"
-    port     = 5432
-    user     = "postgres"
-    password = "your-password"
-    dbname   = "enigma_laundry"
-)
-Install dependensi dan jalankan: go run main.go.
+## Instalasi
 
-Penggunaan
-Gunakan menu konsol untuk:
+Untuk menggunakan Enigma Laundry, Anda perlu menyiapkan Go dan PostgreSQL terlebih dahulu. Ikuti langkah-langkah berikut untuk memulai:
 
-Pilih menu untuk fitur yang diinginkan.
-Ikuti instruksi untuk mengelola data.
-Untuk invoice, pilih "Cetak Invoice" dan masukkan ID pelanggan.
+1. **Clone Repositori**
+
+    ```bash
+    git clone 
+    ```
+
+2. **Buka Direktori**
+
+    ```bash
+    cd tugas_enigma
+    ```
+
+3. **Buat dan Isi Database**
+
+    Siapkan database `enigma_laundry` dan isi dengan file `enigma_laundry.sql`.
+
+4. **Atur Koneksi Database**
+
+    Buka file `main.go` dan atur konfigurasi database Anda:
+
+    ```go
+    const (
+        host     = "localhost"
+        port     = 5432
+        user     = "postgres"
+        password = "your-password"
+        dbname   = "enigma_laundry"
+    )
+    ```
+
+5. **Install Dependensi dan Jalankan Aplikasi**
+
+    ```bash
+    go run main.go
+    ```
+
+## Penggunaan
+
+Setelah aplikasi berjalan, Anda dapat menggunakan menu konsol untuk mengakses berbagai fitur:
+
+1. **Pilih Menu**: Gunakan menu untuk memilih fitur yang diinginkan.
+2. **Kelola Data**: Ikuti instruksi untuk mengelola data pelanggan, layanan, atau transaksi.
+3. **Cetak Invoice**: Untuk mencetak invoice, pilih "Cetak Invoice" dan masukkan ID pelanggan.
